@@ -42,6 +42,10 @@ img {
   margin-top: 20px;
   margin-left: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Orbitron';
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
 }
 
 .button-glow:hover {
@@ -409,7 +413,7 @@ h2 {
 .resume-img{
   width: 400px;
   border-radius: 15px;
-  margin-bottom: 20px;
+  margin: 20px 00;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .resume-img:hover{
@@ -424,6 +428,7 @@ h2 {
   gap: 20px;
   max-width: 500px;
   margin: 30px auto 0;
+  font-family: 'Orbitron';
 }
 
 .contact-form input,
@@ -434,6 +439,7 @@ h2 {
   border-radius: 10px;
   color: #ffffff;
   font-size: 1rem;
+  font-family: 'Orbitron';
 }
 
 .contact-form textarea {
@@ -450,9 +456,21 @@ h2 {
   color: #bbb;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+.footer-icon img{
+border-radius: 20px;
+}
+.img-icon{
+  border-radius: 20px;
+}
 
 .footer .social-links {
   margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ 
+
 }
 
 .footer .social-links a {
@@ -465,6 +483,63 @@ h2 {
 .footer .social-links a:hover {
   color: #00f0ff;
 }
+
+.contact-icons {
+  text-decoration: none;
+  color:  #01466c;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;    
+  
+
+}
+.contact-icons-header{
+  width: 400px;
+}
+ul.contact-icons-list {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+.fa-github{
+  font-size: xx-large;
+  margin-right: 10px; 
+  color: #fff;
+}
+
+.icon-linkedin {
+  
+  
+  width: fit-content;
+  background-color: white;
+  border-radius: 2px;
+  
+
+}
+.img-icon {
+  width: 32px;
+  border-radius: 5px;
+  margin: 0;
+  transition: transform 0.5s ease, color 0.5s ease; /* Agregamos transición en el estado normal */
+}
+.img-icon:hover {
+  
+  border-radius: 5px;
+ 
+  transform: scale(1.2); /* Escala fluida */
+}
+
+
+
+.whatsapp-icon{
+ border-radius: 7px;
+
+}
+
 
 /* === About section layout === */
 .about-container {
