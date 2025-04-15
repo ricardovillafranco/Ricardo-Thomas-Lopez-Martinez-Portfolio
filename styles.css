@@ -480,8 +480,19 @@ h2 {
   text-align: center;
 }
 
-@media (min-width: 768px) {
-  .about-container {
+@media (max-width: 768px) {
+  .hero-content {
+    width: 100%;
+   
+    flex-direction: column;
+  }
+  .profile-photo {
+    height: 320px;
+  }
+  .side-container{
+    padding: 0 20px;
+  }
+   .about-container {
     flex-direction: row;
     text-align: left;
     justify-content: center;
@@ -491,18 +502,25 @@ h2 {
     margin-bottom: 0;
     
   }
-}
-
-/* === Responsive === */
-@media (max-width: 768px) {
   .hero h1 {
     font-size: 2.2rem;
+    text-align: center;
   }
+  .hero .tagline {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    text-align: center;
+}
+.button-glow {
+  align-self: anchor-center;}
 
   .section {
     padding: 60px 16px;
   }
-}
+  }
+  
+
+
 
 
 
