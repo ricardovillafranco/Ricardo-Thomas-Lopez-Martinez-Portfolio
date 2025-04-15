@@ -497,7 +497,7 @@ border-radius: 20px;
 
 }
 .contact-icons-header{
-  width: 400px;
+  max-width: 400px;
 }
 ul.contact-icons-list {
   display: flex;
