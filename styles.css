@@ -329,7 +329,7 @@ ul.profile-icons-list {
   transition: all 0.3s ease;
 }
 
-.profile-icon-container:hover {
+.contact-icons-header .profile-icon-container:hover {
   background: rgba(15, 15, 35, 0.8);
   transform: translateY(-5px);
   box-shadow: 0 0 25px rgba(0, 240, 255, 0.4);
@@ -528,6 +528,13 @@ border-radius: 20px;
 }
 .contact-icons-header{
   max-width: 400px;
+  
+}
+
+.contact-icons-header a{
+  
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
+  transition: all 0.3s ease;
 }
 .contact-icons-header .profile-icon-container {
   height: 80px;
