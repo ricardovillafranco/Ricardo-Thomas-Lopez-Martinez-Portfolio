@@ -367,6 +367,81 @@ ul.profile-icons-list {
 h2 {
   font-size: 3rem
 }
+
+/* Efectos on load*/
+
+.cyber-border,
+.gmail, 
+.linkedin,
+.github,
+.whatsapp,
+.javascript,
+.react,
+.css,
+.html,
+.wordpress,
+.tailwind,
+.elementor,
+.acf,
+.project-card{
+  opacity: 0;
+  animation: dropAndBounce 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.gmail { animation-delay: 0.2s; }
+.linkedin { animation-delay: 0.6s; }
+.github { animation-delay: 1s; }
+.whatsapp { animation-delay: 0.8s; }
+.cyber-border { animation-delay: 0.4s; }
+
+.javascript { animation-delay: 1.6s;}
+.react { animation-delay: 0.6s;}
+.css { animation-delay: 1s;}
+.html { animation-delay: 1.6s;}
+.wordpress { animation-delay: 1.4s;}
+.tailwind { animation-delay: 1.2s;}
+.elementor { animation-delay: 0.8s;}
+.acf { animation-delay: 1.4s;}
+.project-card{
+  animation-delay: 1.4s;
+}
+
+
+
+
+
+
+
+@keyframes dropAndBounce {
+  0% {
+    opacity: 0;
+    transform: translateY(-100vh) scaleY(0.8);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(25px) scaleY(1.1);
+  }
+  75% {
+    transform: translateY(-15px) scaleY(0.95);
+  }
+  90% {
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* === Transición suave para hover === */
+.button-glow {
+  transition: transform 0.3s ease;
+}
+
+.button-glow:hover {
+  transform: scale(1.05);
+}
+
 /* === Projects Section === */
 
 
@@ -652,8 +727,5 @@ ul.contact-icons-list {
   }
   }
   
-
-
-
 
 
