@@ -15,8 +15,10 @@
 
 <body>
     <header class="hero">
-        <div id="cyber-particles"></div> <!-- Partículas como fondo -->
-        <div class="cyber-grid"></div> <!-- Grid de fondo -->
+        <div class="parallax-container">
+            <img src="./images/hero-bg.webp" alt="Fondo tecnológico" class="parallax-bg">
+          </div>
+        
         <div class="hero-content">
           <div class="cyber-border"> <!-- Nuevo contenedor para efecto de borde -->
             <img src="./images/profile_photo_v6.webp" alt="Photo of Rick Dev" class="profile-photo" />
@@ -24,19 +26,19 @@
           <div class="side-container">
             <div class="contact-icons contact-icons-header ">
         
-              <a class="footer-icon" href="https://www.linkedin.com/in/ricardo-thomas-l%C3%B3pez-mart%C3%ADnez/">
+              <a class="profile-icon-container" href="https://www.linkedin.com/in/ricardo-thomas-l%C3%B3pez-mart%C3%ADnez/">
                   <img class="linkedin-icon img-icon profile-icons-item" src="./images/Logos/gmail-icon.svg" alt="">
               </a>
-              <a class="footer-icon" href="https://www.linkedin.com/in/ricardo-thomas-l%C3%B3pez-mart%C3%ADnez/">
+              <a class="profile-icon-container" href="https://www.linkedin.com/in/ricardo-thomas-l%C3%B3pez-mart%C3%ADnez/">
                   <img class="linkedin-icon img-icon profile-icons-item" src="./images/Logos/linkedIn-img.svg" alt="">
               </a>
       
-              <a class="footer-icon" href="https://github.com/ricardovillafranco">
+              <a class=" profile-icon-container" href="https://github.com/ricardovillafranco">
                   <i class="fa-brands fa-github img-icon profile-icons-item"></i>
               </a>
       
       
-              <a class="footer-icon" href="whatsapp://send?phone=+525564410491&text=Hola,%20te%20envío%20un%20mensaje%20desde%20mi%20sitio%20web" target="_blank" target="_blank" >
+              <a class=" profile-icon-container" href="whatsapp://send?phone=+525564410491&text=Hola,%20te%20envío%20un%20mensaje%20desde%20mi%20sitio%20web" target="_blank" target="_blank" >
       
                   <img class="img-icon whatsapp-icon profile-icons-item"  src="./images/Logos/whatsapp-icon.svg" alt="Web Icon">
               </a>
@@ -350,43 +352,8 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="./index.js"></script>
   <script src="https://kit.fontawesome.com/cc6c784dc6.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script>
-    particlesJS("particles", {
-      "particles": {
-        "number": {
-          "value": 80,
-          "density": { "enable": true, "value_area": 800 }
-        },
-        "color": { "value": "#00f0ff" },
-        "shape": {
-          "type": "circle",
-          "stroke": { "width": 0, "color": "#000000" }
-        },
-        "opacity": {
-          "value": 0.5,
-          "random": true,
-          "anim": { "enable": true, "speed": 0.5, "opacity_min": 0.1 }
-        },
-        "size": {
-          "value": 3,
-          "random": true
-        },
-        "move": {
-          "enable": true,
-          "speed": 1,
-          "direction": "none",
-          "out_mode": "out"
-        }
-      },
-      "interactivity": {
-        "events": {
-          "onhover": { "enable": true, "mode": "grab" }
-        }
-      },
-      "retina_detect": true
-    });
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
+  
   
 </body>
 </html>

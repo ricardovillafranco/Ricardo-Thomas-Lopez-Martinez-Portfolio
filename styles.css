@@ -40,7 +40,7 @@ img {
   font-weight: bold;
   display: inline-block;
   margin-top: 20px;
-  margin-left: 20px;
+  
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   font-family: 'Orbitron';
   font-size: 16px;
@@ -64,6 +64,35 @@ img {
   flex-direction: column;
 
 }
+/* Estilos para el parallax */
+.parallax-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0; /* Capa inferior */
+}
+
+.parallax-bg {
+  width: 100%;
+  height: 120%; /* Para permitir movimiento */
+  object-fit: cover;
+  transform: scale(1.2); /* Valor inicial para el efecto */
+  opacity: .5;
+}
+
+/* Asegurar que el contenido esté sobre el fondo */
+.hero-content,
+#cyber-particles,
+.cyber-grid,
+.profile-icons {
+  position: relative;
+  z-index: 2; /* Capa superior */
+}
+
+
 
 .hero-content {
   width: 1200px;
@@ -136,6 +165,7 @@ img {
   border-radius: 50%;
   background: linear-gradient(45deg, #00f0ff, #ff00ff, #00f0ff);
   animation: borderGlow 2s linear infinite;
+  height: 355px;
 }
 
 .cyber-border::before {
@@ -255,7 +285,7 @@ img {
 /* === Profile Photo === */
 .profile-photo {
   width: auto;
-  height: 380px;
+  height: 340px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #00f0ff;
@@ -499,6 +529,20 @@ border-radius: 20px;
 .contact-icons-header{
   max-width: 400px;
 }
+.contact-icons-header .profile-icon-container {
+  height: 80px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .profile-icon-container:hover .img-icon {
+  
+  border-radius: 5px;
+ 
+  transform: scale(1.2); /* Escala fluida */
+}
 ul.contact-icons-list {
   display: flex;
   align-items: center;
@@ -563,7 +607,11 @@ ul.contact-icons-list {
     flex-direction: column;
   }
   .profile-photo {
-    height: 320px;
+    height:250px;
+  }
+  .cyber-border {
+    margin-bottom: 20px;
+    height: 265px;
   }
   .side-container{
     padding: 0 20px;
