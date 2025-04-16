@@ -81,9 +81,9 @@ const heroBg = document.querySelector('.parallax-bg');
 new simpleParallax(heroBg, {
   orientation: isMobile ? 'up' : 'down', // Dirección diferente en mobile
   scale: isMobile ? 1.1 : 1.3,
-  delay: isMobile ? 0.6 : 0.4,
+  delay: isMobile ? 0.2 : 0.4,
   overflow: true,
-  transition: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)',
+  transition: 'linear',
   breakpoint: 768,
   maxTransition: 50,
   customWrapper: ".parallax-container"
