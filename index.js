@@ -80,7 +80,7 @@ const heroBg = document.querySelector('.parallax-bg');
 
 new simpleParallax(heroBg, {
   orientation: isMobile ? 'up' : 'down', // Dirección diferente en mobile
-  scale: isMobile ? 1.1 : 2.2,
+  scale: isMobile ? 1.2 : 2.2,
   delay: isMobile ? 0.2 : 0.6,
   overflow: true,
   transition: 'linear',
