@@ -751,4 +751,20 @@ ul.contact-icons-list {
       animation: slideIn 0.8s ease-out forwards;
     }
   }
+
+  /* Upwork modifications */
+
+.contact-icons{
+  display: none;
+}
+  .freelance{
+    display: none;
+  }
+
+  .resume{
+    display: none;
+  }
+
+  
+  
   
