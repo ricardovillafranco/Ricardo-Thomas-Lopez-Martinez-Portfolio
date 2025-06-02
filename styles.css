@@ -297,10 +297,6 @@ img {
 .profile-icons {
   width: 100%;
   max-width: 1200px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
   margin: 50px auto;
   padding: 20px;
   position: relative;
@@ -308,13 +304,22 @@ img {
 }
 
 ul.profile-icons-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Ajusta automáticamente */
   gap: 25px;
+  justify-content: center;
   list-style: none;
+  padding: 0;
 }
 
+ul.profile-icons-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px; /* Tamaño fijo */
+  height: 100px; /* Tamaño fijo */
+  
+}
 .profile-icon-container {
   background: rgba(15, 15, 35, 0.6);
   backdrop-filter: blur(10px);
@@ -327,6 +332,7 @@ ul.profile-icons-list {
   border: 1px solid rgba(0, 240, 255, 0.3);
   box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
   transition: all 0.3s ease;
+  width: 100%
 }
 
 .contact-icons-header .profile-icon-container:hover {
@@ -371,10 +377,6 @@ h2 {
 /* Efectos on load*/
 
 .cyber-border,
-.gmail, 
-.linkedin,
-.github,
-.whatsapp,
 .javascript,
 .react,
 .css,
@@ -383,14 +385,13 @@ h2 {
 .tailwind,
 .elementor,
 .acf{
+  will-change: transform, opacity;
+  transform: translateY(-100px) scaleY(0.8);
   opacity: 0;
   animation: dropAndBounce 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 }
 
-.gmail { animation-delay: 0.2s; }
-.linkedin { animation-delay: 0.6s; }
-.github { animation-delay: 1s; }
-.whatsapp { animation-delay: 0.8s; }
+
 .cyber-border { animation-delay: 0.4s; }
 
 .javascript { animation-delay: 1.6s;}
