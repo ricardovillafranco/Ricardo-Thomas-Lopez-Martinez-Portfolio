@@ -82,7 +82,7 @@ img {
   justify-content: center;
   position: relative;
   z-index: 3;
-  animation: fadeInUp 1.5s ease both;
+
   margin: 20px 0; /* Aseguramos espacio vertical */
 
  
@@ -112,54 +112,6 @@ img {
 
 
 
-/* Animaciones */
-@keyframes scanlines {
-  0% { background-position: 0 0; }
-  100% { background-position: 0 4px; }
-}
-
-@keyframes gradientBackground {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-@keyframes gridMove {
-  from { background-position: 0 0; }
-  to { background-position: 30px 30px; }
-}
-
-@keyframes borderGlow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-@keyframes linePulse {
-  0% { width: 80%; opacity: 1; }
-  50% { width: 100%; opacity: 0.5; }
-  100% { width: 80%; opacity: 1; }
-}
-
-@keyframes textGlitch {
-  0% { transform: translate(0); }
-  20% { transform: translate(-2px, 2px); }
-  40% { transform: translate(-2px, -2px); }
-  60% { transform: translate(2px, 2px); }
-  80% { transform: translate(2px, -2px); }
-  100% { transform: translate(0); }
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 /* === Hero Text === */
 .hero h1 {
@@ -293,37 +245,6 @@ width: 50px;
 h2 {
   font-size: 3rem;
   text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-@keyframes dropAndBounce {
-  0% {
-    opacity: 0;
-    transform: translateY(-100vh) scaleY(0.8);
-  }
-  60% {
-    opacity: 1;
-    transform: translateY(25px) scaleY(1.1);
-  }
-  75% {
-    transform: translateY(-15px) scaleY(0.95);
-  }
-  90% {
-    transform: translateY(10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
 }
 
 
