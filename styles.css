@@ -283,6 +283,11 @@ ul.profile-icons-list li {
 .profile-icons-tailwind {
   border-radius: 8px;
 }
+.profile-icons-kadence{
+width: 50px;
+  height: 50px;
+  
+}
 
 h2 {
   font-size: 3rem;
@@ -682,11 +687,11 @@ h2 {
 
 /* === Footer === */
 .footer {
-  background: #0d0d15;
+  background: #306bac;
   text-align: center;
   padding: 40px 20px;
   font-size: 0.9rem;
-  color: #bbb;
+  color: #fff;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 .footer-icon img{
@@ -850,8 +855,9 @@ ul.contact-icons-list {
     flex-direction: column;
   }
       .hero-main-container {
-        height: 170vh;
+       
         justify-content: flex-start;
+        height: fit-content;
     }
 
     .hero-tags img {
@@ -903,6 +909,9 @@ ul.contact-icons-list {
       .project-grid {
         max-width: 300px;
     }
+    .project-card img {
+    object-fit: cover;
+}
 
     .why-grid {
   
