@@ -646,46 +646,6 @@ h2 {
   transform: scale(1.05);
 }
 
-/* === Resume Section === */
-#resume p {
-  margin-bottom: 20px;
-}
-.resume-img{
-  width: 400px;
-  border-radius: 15px;
-  margin: 20px 00;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.resume-img:hover{
-  transform: scale(1.05);
-  box-shadow: 0 0 12px #00f0ff, 0 0 24px #00f0ff;
-}
-
-/* === Contact Form === */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  max-width: 500px;
-  margin: 30px auto 0;
-  font-family: 'IBM Plex Sans', sans-serif;
-}
-
-.contact-form input,
-.contact-form textarea {
-  background: #1c1c2b;
-  border: none;
-  padding: 14px;
-  border-radius: 10px;
-  color: #ffffff;
-  font-size: 1rem;
-  font-family: 'IBM Plex Sans', sans-serif;
-}
-
-.contact-form textarea {
-  resize: vertical;
-  min-height: 120px;
-}
 
 /* === Footer === */
 .footer {
