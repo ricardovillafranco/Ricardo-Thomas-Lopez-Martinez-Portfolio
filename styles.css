@@ -96,10 +96,9 @@ img {
   gap: 20px;
   
 }
-.hero-tags img {
+.hero-tags svg {
+   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
   
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 154px;
   height: 151px;
 }
@@ -742,7 +741,7 @@ ul.contact-icons-list {
         height: fit-content;
     }
 
-    .hero-tags img {
+    .hero-tags svg {
     width: 89px;
     height: 89px;
 }
