@@ -89,3 +89,36 @@ new simpleParallax(heroBg, {
   customWrapper: ".parallax-container"
 });
 });
+
+// FAQ accordion functionality
+    document.addEventListener('DOMContentLoaded', () => {
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    
+    faqQuestions.forEach(question => {
+      question.addEventListener('click', () => {
+        // Toggle current question
+        question.classList.toggle('active');
+        const answer = question.nextElementSibling;
+        answer.classList.toggle('active');
+        
+        // Close other open questions
+        faqQuestions.forEach(otherQuestion => {
+          if (otherQuestion !== question && otherQuestion.classList.contains('active')) {
+            otherQuestion.classList.remove('active');
+            otherQuestion.nextElementSibling.classList.remove('active');
+          }
+        });
+      });
+    });
+    
+    // Accessibility enhancements
+    faqQuestions.forEach(question => {
+      question.setAttribute('role', 'button');
+      question.setAttribute('aria-expanded', 'false');
+      
+      question.addEventListener('click', () => {
+        const isExpanded = question.getAttribute('aria-expanded') === 'true';
+        question.setAttribute('aria-expanded', !isExpanded);
+      });
+    });
+  });

@@ -10,9 +10,9 @@
   <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
 
   <!-- Fonts & Swiper CSS -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;700&family=Orbitron:wght@400;700&display=swap"
-    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=Inter:wght@400;500;700&family=Nunito:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+
+  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preload" href="./images/Logos/javascript.webp" as="image">
@@ -37,24 +37,33 @@
 
 <body>
   <header class="hero">
-    <div class="parallax-container">
-      <img src="./images/hero-bg.webp" alt="Fondo tecnológico" class="parallax-bg">
-    </div>
+  
+   
+<div class="hero-main-container">
+  <div class="hero-tags">
+    
+    <img src="./images/experience.png" alt="">
+    <img src="./images/elementor.png" alt="">
+    <img src="./images/projects.png" alt="">
 
-    <div class="hero-content">
-      <div class="cyber-border"> <!-- Contenedor para efecto de borde -->
+  </div>
+<div class="hero-content">
+  
+
         <img src="./images/profile_photo_v6.webp" alt="Photo of Rick Dev" class="profile-photo" />
-      </div>
+   
       <div class="side-container">
         
-        <h1 class="glow cyber-text">Hi, I'm Rick Dev</h1> <!-- Añadida clase cyber-text -->
-        <p class="tagline neon-underline">WordPress Developer • WooCommerce Specialist • Frontend Developer</p>
-        <a href="#projects" class="button-glow">View My Work</a>
+        <h2 class="tagline">Hi, I'm Rick Dev</h2> <!-- Añadida clase cyber-text -->
+
+           <h1 class=" ">Landing pages, e-commerce, blogs, and fully customized websites built with WordPress</h1>
+        
       </div>
 
 
     </div>
-    <div class="profile-icons">
+
+     <div class="profile-icons">
       <ul class="profile-icons-list">
         <li>
           <div class="profile-icon-container wordpress">
@@ -121,17 +130,27 @@
     </div>
 
 
+</div>
+
+    
+  
+
+   
+
+
   </header>
 
   <main>
     <!-- Projects Section -->
-    <section id="projects" class="section scroll-animation">
-      <h2 class="glow">Projects</h2>
+    <section id="landing" class="section scroll-animation section-landing">
+      <h4 class="section-label">Landing Pages</h4>
+  <h3 class="section-title">High-converting pages tailored to your brand</h3>
+  <p class="section-text">Your message, delivered with impact.</p>
       <div class="project-grid">
-        <!-- Repeat for each project -->
+        <!--  Projects -->
         <div class="project-card">
           <img src="./images/Projects/landing_page_mascotas.webp" loading="lazy" decoding="async" width="320" height="150"   alt="Project landing page mascotas screenshot" />
-          <h3>Landing Page Mascotas</h3>
+          <h3>Pets</h3>
           <p>Custom landing page built with WordPress and Elementor, following design mockups closely. Focused on
             attention to detail, design consistency, and user experience.</p>
           <a href="https://www.vrim.com.mx/lp-mascotas/" target="_blank">View Live</a>
@@ -149,7 +168,37 @@
           <p>E-commerce website built with WordPress, Elementor, and WooCommerce. Enhanced with custom code for tailored
             functionality and seamless shopping experience.</p>
           <a href="https://tuconsultoriointeligente.com/" target="_blank">View Live</a>
+          </div>
+        <div class="project-card">
+          <img src="./images/Projects/Estudios-telemedicina.webp" alt="Project landing page mascotas screenshot"  loading="lazy" decoding="async" width="320" height="150"/>
+          <h3>Telemedicine Studies</h3>
+          <p>Service-focused landing page developed with WordPress, Elementor, and custom code. Includes an integrated
+            contact form and detailed service information to boost conversions.</p>
+          <a href="https://www.vrim.com.mx/estudios-telemedicina/" target="_blank">View Live</a>
         </div>
+        <div class="project-card">
+          <img src="./images/Projects/memberships.webp" alt="Project landing page mascotas screenshot"  loading="lazy" decoding="async" width="320" height="150"/>
+          <h3>Memberships</h3>
+          <p>This landing page was designed to promote and sell membership plans. Built with WordPress and Elementor, it features a clean, conversion-focused layout and responsive design. I used custom HTML and CSS to enhance the visual style and improve user experience.</p>
+          <a href="https://www.vrim.com.mx/membresias-vrim-new/" target="_blank">View Live</a>
+        </div>
+        <div class="project-card">
+          <img src="./images/Projects/urology.webp" alt="Project landing page mascotas screenshot"  loading="lazy" decoding="async" width="320" height="150"/>
+          <h3>Urology </h3>
+          <p>This landing page was created for a urologist to showcase services and attract new patients. Built with WordPress using the Kadence theme and Gutenberg blocks, it also includes custom code to extend functionality and enhance user interaction. The result is a fast, professional, and responsive site.</p>
+          <a href="https://urologoencuernavaca.com.mx/circuncision-en-cuernavaca/" target="_blank">View Live</a>
+        </div>
+       
+      </div>
+    </section>
+     <section id="web-sites" class="section scroll-animation web-sites">
+      <h4 class="section-label">Websites</h4>
+<h3 class="section-title">Custom websites that reflect your brand and goals</h3>
+<p class="section-text">Engage visitors with design and functionality that deliver results.</p>
+      <div class="project-grid">
+        <!-- Repeat for each project -->
+       
+    
         <div class="project-card">
           <img src="./images/Projects/render_zero_project.webp"  loading="lazy" decoding="async" width="320" height="150" alt="Project landing page mascotas screenshot" />
           <h3>Render Zero</h3>
@@ -158,6 +207,32 @@
           </p>
           <a href="https://renderzero.com/" target="_blank">View Live</a>
         </div>
+         <div class="project-card">
+          <img src="./images/Projects/VRIM_Connect.webp" alt="Project landing page mascotas screenshot"  loading="lazy" decoding="async" width="320" height="150"/>
+          <h3>Vrim Connect</h3>
+          <p>Dynamic website with WordPress, Elementor, Astra theme. Followed design mockups, enhanced with ACF plugin.
+            Dedication to design and usability.</p>
+          <a href="https://vrimconnect.com/home/" target="_blank">View Live</a>
+        </div>
+        
+        
+     
+        <div class="project-card">
+          <img src="./images/Projects/Urology-website.webp" alt="Project landing page mascotas screenshot"  loading="lazy" decoding="async" width="320" height="150"/>
+          <h3>Urology Specialist Website</h3>
+          <p>Custom multi-page site for a urologist built with Gutenberg, Kadence, and custom code. Highlights services, consultation locations, and includes a contact form.</p>
+          <a href="https://lachicadeuro.com/" target="_blank">View Live</a>
+        </div>
+       
+      </div>
+    </section>
+     <section id="ecommerce" class="section scroll-animation ecommerce">
+      <h4 class="section-label">Ecommerce</h4>
+<h3 class="section-title">Online stores built to convert and scale</h3>
+<p class="section-text">Seamless shopping experiences that drive results.</p>
+      <div class="project-grid">
+        <!-- Repeat for each project -->
+      
         <div class="project-card">
           <img src="./images/Projects/this_way_project_img.webp" loading="lazy" decoding="async" width="320" height="150" alt="Project landing page mascotas screenshot" />
           <h3>This Way</h3>
@@ -165,6 +240,15 @@
             Includes order status tracking for customers and a management system for restaurant staff to view and update
             orders across three branches.</p>
           <!-- <a href="https://thisway.axismetrica.com/" target="_blank">View Live</a> -->
+        </div>
+        
+      
+        <div class="project-card">
+          <img src="./images/Projects/Koi_page.webp" alt="Project landing page mascotas screenshot"  loading="lazy" decoding="async" width="320" height="150"/>
+          <h3>Koi ecommerce</h3>
+          <p>Built a sleek e-commerce site with Elementor Pro, WooCommerce, and ACF for a seamless shopping experience.
+          </p>
+          <a href="https://koicbd.com.mx/tienda/" target="_blank">View Live</a>
         </div>
         <div class="project-card">
           <img src="./images/Projects/esferas_esnaviso__project_img.webp" loading="lazy" decoding="async" width="320" height="150"
@@ -175,7 +259,27 @@
             design that showcases the unique products.</p>
           <!-- <a href="https://esferasesnaviso.com.mx/" target="_blank">View Live</a> -->
         </div>
+       
+       
+      </div>
+    </section>
+     <section id="blogs" class="section scroll-animation blogs">
+      
+      <h4 class="section-label">Blogs</h4>
+<h3 class="section-title">Engaging blogs that build trust and drive traffic</h3>
+<p class="section-text">Smart layouts, smooth reading, and built to grow your audience.</p>
+
+      <div class="project-grid">
+        <!-- Repeat for each project -->
+        
         <div class="project-card">
+          <img src="./images/Projects/blog-VRIM-CONNECT.webp" loading="lazy" decoding="async" width="320" height="150"
+            alt="Project landing page mascotas screenshot" />
+          <h3>Blog VRIM Connect</h3>
+          <p>Modern blog built with Elementor, featuring subscription form, post notifications, and a high-converting banner CTA.</p>
+          <a href="https://vrimconnect.com/blog/" target="_blank">View Live</a>
+        </div>
+         <div class="project-card">
           <img src="./images/Projects/blog_ponto_icarus_project_img.webp" loading="lazy" decoding="async" width="320" height="150"
             alt="Project landing page mascotas screenshot" />
           <h3>Blog Ponto Icarus</h3>
@@ -183,13 +287,7 @@
             to the client’s specifications, focusing on clean design, readability, and an intuitive user experience.</p>
           <a href="https://blog.pontoicarus.com.br/" target="_blank">View Live</a>
         </div>
-        <div class="project-card">
-          <img src="./images/Projects/VRIM_Connect.webp" alt="Project landing page mascotas screenshot"  loading="lazy" decoding="async" width="320" height="150"/>
-          <h3>Vrim Connect</h3>
-          <p>Dynamic website with WordPress, Elementor, Astra theme. Followed design mockups, enhanced with ACF plugin.
-            Dedication to design and usability.</p>
-          <a href="https://vrimconnect.com/home/" target="_blank">View Live</a>
-        </div>
+        
         <div class="project-card">
           <img src="./images/Projects/vrim_blog_project_img.webp" alt="Project landing page mascotas screenshot" loading="lazy" decoding="async" width="320" height="150"/>
           <h3>Vrim Blog</h3>
@@ -198,31 +296,108 @@
             readability, and overall user experience.</p>
           <a href="https://www.vrim.com.mx/blog-vrim/" target="_blank">View Live</a>
         </div>
-        <div class="project-card">
-          <img src="./images/Projects/Koi_page.webp" alt="Project landing page mascotas screenshot"  loading="lazy" decoding="async" width="320" height="150"/>
-          <h3>Koi ecommerce</h3>
-          <p>Built a sleek e-commerce site with Elementor Pro, WooCommerce, and ACF for a seamless shopping experience.
-          </p>
-          <a href="https://koicbd.com.mx/tienda/" target="_blank">View Live</a>
-        </div>
-        <div class="project-card">
-          <img src="./images/Projects/Estudios-telemedicina.webp" alt="Project landing page mascotas screenshot"  loading="lazy" decoding="async" width="320" height="150"/>
-          <h3>Estudios de Telemedicina</h3>
-          <p>Service-focused landing page developed with WordPress, Elementor, and custom code. Includes an integrated
-            contact form and detailed service information to boost conversions.</p>
-          <a href="https://www.vrim.com.mx/estudios-telemedicina/" target="_blank">View Live</a>
-        </div>
-        <div class="project-card">
-          <img src="./images/Projects/Pokemon_page.webp" alt="Project landing page mascotas screenshot"  loading="lazy" decoding="async" width="320" height="150"/>
-          <h3>Pokemon Game</h3>
-          <p>Developed a Pokémon battle game using HTML, CSS, and JavaScript with unique abilities and effects.</p>
-          <a href="https://ricardovillafranco.github.io/pokemon-game/" target="_blank">View Live</a>
-        </div>
+        
+        
+        
       </div>
     </section>
+    <section id="why-choose" class="section scroll-animation ecommerce">
+      <h4 class="section-label">Why Choose Me</h4>
+<h3 class="section-title">Professional, reliable, and results-driven</h3>
+<p class="section-text">I focus on clean code, strategic thinking, and clear communication to bring your ideas to life with confidence.</p>
+     <div class="why-grid">
+  <div class="why-card">
+    <span class="why-icon">🚀</span>
+    <p>Fast, reliable delivery</p>
+  </div>
+  <div class="why-card">
+    <span class="why-icon">🎯</span>
+    <p>Pixel-perfect Figma to WordPress</p>
+  </div>
+  <div class="why-card">
+    <span class="why-icon">💬</span>
+    <p>Clear communication</p>
+  </div>
+  <div class="why-card">
+    <span class="why-icon">📱</span>
+    <p>Mobile-first approach</p>
+  </div>
+</div>
 
-    <section id="certificates-platzi" class="section">
-      <h2 class="glow">Platzi Certificates</h2>
+    </section>
+    <section id="blogs" class="section scroll-animation blogs">
+      
+      <h4 class="section-label">FAQ</h4>
+<h3 class="section-title">Everything you need to know before starting</h3>
+<p class="section-text">Got questions? Here are answers to some common ones clients ask.</p>
+
+<div class="faq-container">
+ 
+
+  <div class="faq-item">
+    <div class="faq-question">How long does a typical website project take?</div>
+    <div class="faq-answer">
+      <div class="faq-answer-content">
+        <p>Most projects are completed within 1–3 weeks, depending on complexity and client feedback turnaround. We follow an agile development process with clear milestones:</p>
+        <ul>
+          <li>Discovery & Planning: 2-3 days</li>
+          <li>Design Phase: 3-5 days</li>
+          <li>Development: 5-10 days</li>
+          <li>Testing & Revisions: 2-3 days</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">Do you work with Figma designs or create custom designs?</div>
+    <div class="faq-answer">
+      <div class="faq-answer-content">
+        <p>We offer both options to suit your needs:</p>
+        <ul>
+          <li><strong>Figma to WordPress:</strong> We specialize in converting Figma mockups into pixel-perfect, fully responsive WordPress websites with attention to every design detail.</li>
+          <li><strong>Custom Design:</strong> Our design team can create a unique, brand-aligned design system tailored to your business goals and user needs.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">Will my website be mobile-responsive and performant?</div>
+    <div class="faq-answer">
+      <div class="faq-answer-content">
+        <p>Absolutely. We adhere to modern web standards to ensure:</p>
+        <ul>
+          <li>Fully responsive design across all device sizes</li>
+          <li>90+ Lighthouse performance scores</li>
+          <li>Optimized assets and lazy loading</li>
+          <li>Progressive enhancement strategy</li>
+        </ul>
+        <p>All websites include performance testing reports before delivery.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">Why do some portfolio sites look different from their original state?</div>
+    <div class="faq-answer">
+      <div class="faq-answer-content">
+        <p>Some portfolio items represent work completed during my tenure at a digital marketing agency. These projects may have evolved since my involvement:</p>
+        <ul>
+          <li><strong>Client Modifications:</strong> Some clients made subsequent changes that affected design integrity</li>
+          <li><strong>Third-Party Updates:</strong> Plugin or platform updates sometimes introduce compatibility issues</li>
+          <li><strong>Maintenance:</strong> Without ongoing maintenance, even well-built sites can degrade over time</li>
+        </ul>
+        <p>All original deliverables met strict quality standards for design, responsiveness, and performance.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </section>
+
+    <section id="certificates-platzi" class="certificates">
+      <h2 class="">Platzi Certificates</h2>
       <div class="swiper platzi-swiper">
         <div class="swiper-wrapper">
           <!-- Slide -->
@@ -270,8 +445,8 @@
     </section>
 
 
-    <section id="certificates-oracle" class="section">
-      <h2 class="glow">Oracle One Certificates</h2>
+    <section id="certificates-oracle" class="certificates">
+      <h2 class="">Oracle One Certificates</h2>
       <div class="swiper oracle-swiper">
         <div class="swiper-wrapper">
           <!-- Slide -->
@@ -311,22 +486,22 @@
 
     <!-- Resume Download -->
     <section id="resume" class="section resume">
-      <h2 class="glow">Resume</h2>
+      <h2 class="">Resume</h2>
       <img class="resume-img" src="./images/resume_2025_img.webp" alt="Rick Dev Resume">
       <p>You can download my resume below:</p>
 
       <a href="https://drive.google.com/file/d/1Wktm2dplhV3yT9bpQnyfAkwBm_Xoq4fu/view?usp=sharing" target="_blank"
-        class="button-glow" download>Download Resume</a>
+        class="button-" download>Download Resume</a>
     </section>
 
     <!-- Contact Form
     <section id="contact" class="section">
-      <h2 class="glow">Contact Me</h2>
+      <h2 class="">Contact Me</h2>
       <form action="https://formspree.io/f/{your-id}" method="POST" class="contact-form">
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
         <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="button-glow">Send Message</button>
+        <button type="submit" class="button-">Send Message</button>
       </form>
     </section> -->
   </main>
