@@ -101,6 +101,8 @@ img {
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  width: 154px;
+  height: 151px;
 }
 .side-container{
   display: flex;
